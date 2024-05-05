@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisador de Países</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar bg-dark">
+        <div>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" width="100"  alt="error">
+            </a>
+        </div>
+    </nav>
+    <h1 class="text-center mb-4">Pesquisador de Países</h1>
+
+    <!-- Botão -->
+    <div class="container input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nome do país(em inglês)"
+        aria-label="Recipient`s username" id="pais">
+        <button onclick="Procurar()" type="button" class="btn btn-primary" id="button-addon2">Pesquisar</button>
+    </div>
+
+    <!-- Cards -->
+    <div class="container card text-dark text-center" style="width: 18rem">
+        <img id="bandeira" src="" class="card-img-top mt-3" alt="">
+        <div class="card-body">
+            <h5 class="card-title text-capitalize" id="nome"> Nome </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Capital: </strong> <p id="capital"></p></li>
+            <li class="list-group-item"><strong>Continente: </strong><p id="cont"></p></li>
+            <li class="list-group-item"><strong>População: </strong><p id="pop"></p></li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
